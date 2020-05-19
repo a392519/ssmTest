@@ -16,6 +16,8 @@ public class GoodsController {
     GoodsService goodsService;
     @RequestMapping("/selectAll")
     public ModelAndView selectAll(){
+        System.out.println("hihi");
+
         System.out.println("......");
         List<Goods> list=goodsService.selectAll();
         ModelAndView mv=new ModelAndView("goods.jsp");
