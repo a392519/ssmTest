@@ -1,11 +1,14 @@
 package com.mhys.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class Goods {
     private int gid;
     private String goodsName;
     private double goodsPrice;
+   @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date startTime;
 
     public int getGid() {

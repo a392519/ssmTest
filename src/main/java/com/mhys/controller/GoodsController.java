@@ -22,7 +22,7 @@ public class GoodsController {
         List<Goods> list=goodsService.selectAll();
         ModelAndView mv=new ModelAndView("goods.jsp");
         System.out.println(list.get(0)+"........");
-        mv.addObject("list",list);
+        mv.addObject("ll",list);
         return mv;
     }
     @RequestMapping("/del")
